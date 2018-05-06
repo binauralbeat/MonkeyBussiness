@@ -1,0 +1,13 @@
+
+@keyframes animatedBackground {
+	from { background-position: 100% 0; }
+	to { background-position: 0 0; }
+}
+
+#right_eye	{
+  background-image: url(./Images/deer.JPG);
+
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+}
