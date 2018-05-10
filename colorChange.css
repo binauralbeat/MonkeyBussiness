@@ -1,0 +1,196 @@
+.faceComp	{
+
+    animation: colorchange 1s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 1s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+
+    0%   {fill: rgb(240, 145, 145);}
+    5%   {fill: #8ace9c;}
+    10% {fill: rgb(75, 75, 160);}
+    25%  {fill: rgb(207, 235, 144);}
+    50%  {fill: rgb(146, 146, 211);}
+    75%  {fill: rgb(115, 78, 133);}
+    100% {fill: rgb(152, 241, 164);}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: red;}
+}
+
+.faceCompDos	{
+
+    animation: colorchangedos 2s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchangedos 2s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchangedos
+{
+
+    0%   {fill: #e95;}
+    5%   {fill: #3d6bce;}
+    10% {fill: #8e5bb2;}
+    25%  {fill: darkcyan;}
+    50%  {fill: salmon;}
+    75%  {fill: aquamarine;}
+    100% {fill: aqua;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: red;}
+}
+
+.faceCompTres	{
+
+    animation: colorchangetres 2s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchangetres 2s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchangetres
+{
+
+    0%   {fill:springgreen;}
+    5%   {fill:lightblue;}
+    10% {fill: oldlace;}
+    25%  {fill:cyan;}
+    50%  {fill: skyblue;}
+    75%  {fill: palegreen;}
+    100% {fill: silver;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: red;}
+}
+
+.faceCompQuatro	{
+
+    animation: colorchangequatro 2s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchangequatro 2s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchangequatro
+{
+
+    0%   {fill: blueviolet;}
+    5%   {fill: greenyellow;}
+    10% {fill: darkcyan;}
+    25%  {fill: rgb(151, 180, 180);}
+    30%  {fill: rgb(146, 243, 170)}
+    50%  {fill: rgb(101, 185, 105);}
+    75%  {fill: rgb(196, 128, 170);}
+    100% {fill: rgb(236, 231, 151);}
+}
+
+@-webkit-keyframes colorchangequatro /* Safari and Chrome - necessary duplicate */
+{
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: red;}
+}
+
+.faceCompCinco	{
+
+    animation: colorchangecinco 2s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchangecinco 2s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchangecinco
+{
+
+    0%   {fill: rgb(43, 226, 171);}
+    5%   {fill: rgb(196, 90, 139);}
+    10% {fill: rgb(106, 168, 101);}
+    25%  {fill: rgb(117, 41, 107);}
+    50%  {fill: rgb(233, 196, 31);}
+    75%  {fill: rgb(148, 26, 132);}
+    100% {fill: rgb(238, 115, 14);}
+}
+
+@-webkit-keyframes colorchangequatro /* Safari and Chrome - necessary duplicate */
+{
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: red;}
+}
+
+.faceCompSeis	{
+
+    animation: colorchangeseis 2s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchangeseis 2s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchangeseis
+{
+
+    0%   {fill: rgb(82, 83, 128);}
+    5%   {fill: rgb(42, 211, 188);}
+    10% {fill: rgb(236, 197, 66);}
+    25%  {fill: rgb(216, 28, 191);}
+    50%  {fill: rgb(247, 230, 156);}
+    75%  {fill: rgb(146, 243, 170);}
+    100% {fill: rgb(158, 55, 89);}
+}
+
+@-webkit-keyframes colorchangequatro /* Safari and Chrome - necessary duplicate */
+{
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: red;}
+}
+
+.titleDos	{
+
+    animation: colortitle 2s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colortitle 2s infinite; /* Chrome and Safari */
+}
+
+@keyframes colortitle
+{
+
+    0%   {color: rgb(82, 83, 128);}
+    5%   {color: rgb(42, 211, 188);}
+    10% {color: rgb(236, 197, 66);}
+    25%  {color: rgb(216, 28, 191);}
+    50%  {color: rgb(247, 230, 156);}
+    75%  {color: rgb(146, 243, 170);}
+    100% {color: rgb(158, 55, 89);}
+}
+
+@-webkit-keyframes colorchangequatro /* Safari and Chrome - necessary duplicate */
+{
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: red;}
+}
