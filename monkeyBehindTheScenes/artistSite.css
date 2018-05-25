@@ -1,0 +1,158 @@
+
+
+
+
+body{
+    background-color: black;
+    /* display: inline-block; */
+    /* grid-auto-rows: auto; */
+    padding-top: 40px;
+    width: 100%;
+
+
+}
+
+#nav {
+
+    background-color:rgb(2, 2, 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #f0f1ed;
+    text-decoration: none;
+    margin: 10px;
+    /* padding-right: 200px; */
+    /* float: right; */
+
+}
+
+.navLinks {
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0e2da;
+    padding: 10px;
+    float: left;
+}
+
+.logo {
+    border-radius: 50%;
+    float: right;
+    width: 50px;
+    margin-right: 20px;
+}
+
+
+.newsBlockOne {
+    background-color: black;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+
+}
+
+.imgBox {
+    grid-auto-columns: min-content;
+    max-block-size: 500px;
+    margin: 10px;
+    /* float: left; */
+
+}
+
+.imgOne {
+    /* float: left; */
+    margin: 15px;
+    height: fit-content;
+    width: fit-content;
+    size: 20%;
+    max-block-size: 500px;
+    max-width: 700px;
+
+}
+
+
+
+#newsBlockTwo {
+    background-color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+.title {
+
+    clear: both;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /* margin-right: 50px; */
+    font-size: 200px;
+    animation: colorchange 3s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 3s infinite; /* Chrome and Safari */
+}
+
+/* .titleBack{
+    animation: colorchangeTwo 3s infinite;
+    -webkit-animation: colorchangeTwo 3s infinite;
+
+}
+border: greenyellow; */
+
+@keyframes colorchangeTwo {
+
+    0%   {background-color: rgb(54, 150, 83);}
+    25%  {background-color: rgb(158, 189, 88);}
+    50%  {background-color: rgb(10, 10, 102);}
+    75%  {background-color: rgb(76, 19, 104);}
+    100% {background-color: rgb(59, 49, 15);}
+
+}
+
+@keyframes colorchange
+{
+
+    0%   {color: rgb(240, 145, 145);}
+    25%  {color: rgb(207, 235, 144);}
+    50%  {color: rgb(146, 146, 211);}
+    75%  {color: rgb(115, 78, 133);}
+    100% {color: rgb(152, 241, 164);}
+}
+
+.outerBox {
+
+    background-color: black;
+    width: 200px ;
+}
+#innerBox {
+
+    display: block;
+    background-color: black;
+    padding: 10px;
+    float: left;
+    /* width: 10%; */
+}
+
+p {
+    color: #e0e2da;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+}
+
+h2 {
+    color: #e0e2da;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sticky {
+    background-color: black;
+    float: right;
+    margin-bottom: 20px;
+    width: 100%;
+    /* margin: 20px; */
+    position: fixed;
+    top: 0;
+  }
+
