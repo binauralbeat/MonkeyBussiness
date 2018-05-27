@@ -103,6 +103,41 @@ $("#button-loop-10").click(() => {
   console.log("clicked 10");
 });
 
+$("#button-loop-11").click(() => {
+  source11GainNode.gain.value = source11GainNode.gain.value > 0 ? 0 : .3;
+  console.log("clicked 11");
+});
+
+$("#button-loop-12").click(() => {
+  source12GainNode.gain.value = source12GainNode.gain.value > 0 ? 0 : .3;
+  console.log("clicked 12");
+});
+
+$("#button-loop-13").click(() => {
+  source13GainNode.gain.value = source13GainNode.gain.value > 0 ? 0 : .3;
+  console.log("clicked 13");
+});
+
+$("#button-loop-14").click(() => {
+  source14GainNode.gain.value = source14GainNode.gain.value > 0 ? 0 : .3;
+  console.log("clicked 14");
+});
+
+$("#button-loop-15").click(() => {
+  source15GainNode.gain.value = source15GainNode.gain.value > 0 ? 0 : .2;
+  console.log("clicked 15");
+});
+
+$("#button-loop-16").click(() => {
+  source16GainNode.gain.value = source16GainNode.gain.value > 0 ? 0 : .2;
+  console.log("clicked 16");
+});
+
+$("#button-loop-17").click(() => {
+  source17GainNode.gain.value = source17GainNode.gain.value > 0 ? 0 : .2;
+  console.log("clicked 17");
+});
+
 // ----------------------------
 // Global Definitions
 // ----------------------------
@@ -120,6 +155,13 @@ var source7;
 var source8;
 var source9;
 var source10;
+var source11;
+var source12;
+var source13;
+var source14;
+var source15;
+var source16;
+var source17;
 
 var source1GainNode;
 var source2GainNode;
@@ -131,6 +173,13 @@ var source7GainNode;
 var source8GainNode;
 var source9GainNode;
 var source10GainNode;
+var source11GainNode;
+var source12GainNode;
+var source13GainNode;
+var source14GainNode;
+var source15GainNode;
+var source16GainNode;
+var source17GainNode;
 
 function init() {
   // Fix up prefixing
@@ -149,7 +198,14 @@ function init() {
       "./loops/synthOne.wav",
       "./loops/synthVox.wav",
       "./loops/synthTwo.wav",
-      "./loops/hHat.wav"
+      "./loops/hHat.wav",
+      "./loops/owl.wav",
+      "./loops/percus.wav",
+      "./loops/percTwo.wav",
+      "./loops/oHat.wav",
+      "./loops/808hat.wav",
+      "./loops/808oHat.wav",
+      "./loops/808cowBell.wav"
 
     ],
     finishedLoading
@@ -170,6 +226,13 @@ function finishedLoading(bufferList) {
   source8 = context.createBufferSource();
   source9 = context.createBufferSource();
   source10 = context.createBufferSource();
+  source11 = context.createBufferSource();
+  source12 = context.createBufferSource();
+  source13 = context.createBufferSource();
+  source14 = context.createBufferSource();
+  source15 = context.createBufferSource();
+  source16 = context.createBufferSource();
+  source17 = context.createBufferSource();
 
 
   // for add the audio file loaded into the bufferList to the source
@@ -183,6 +246,13 @@ function finishedLoading(bufferList) {
   source8.buffer = bufferList[7];
   source9.buffer = bufferList[8];
   source10.buffer = bufferList[9];
+  source11.buffer = bufferList[10];
+  source12.buffer = bufferList[11];
+  source13.buffer = bufferList[12];
+  source14.buffer = bufferList[13];
+  source15.buffer = bufferList[14];
+  source16.buffer = bufferList[15];
+  source17.buffer = bufferList[16];
 
   // set loop to be true
   source1.loop = true;
@@ -195,6 +265,13 @@ function finishedLoading(bufferList) {
   source8.loop = true;
   source9.loop = true;
   source10.loop = true;
+  source11.loop = true;
+  source12.loop = true;
+  source13.loop = true;
+  source14.loop = true;
+  source15.loop = true;
+  source16.loop = true;
+  source17.loop = true;
 
   // make sure all the audio files loop for the same durration
   source1.loopEnd = 10.6556111;
@@ -207,6 +284,13 @@ function finishedLoading(bufferList) {
   source8.loopEnd = 10.6556111;
   source9.loopEnd = 10.6556111;
   source10.loopEnd = 10.6556111;
+  source11.loopEnd = 10.6556111;
+  source12.loopEnd = 10.6556111;
+  source13.loopEnd = 10.6556111;
+  source14.loopEnd = 10.6556111;
+  source15.loopEnd = 10.6556111;
+  source16.loopEnd = 10.6556111;
+  source17.loopEnd = 10.6556111;
 
   // Create a gain node.
   // Connect the source to the gain node.
@@ -251,6 +335,35 @@ function finishedLoading(bufferList) {
   source10.connect(source10GainNode);
   source10GainNode.connect(context.destination);
 
+  source11GainNode = context.createGain();
+  source11.connect(source11GainNode);
+  source11GainNode.connect(context.destination);
+
+  source12GainNode = context.createGain();
+  source12.connect(source12GainNode);
+  source12GainNode.connect(context.destination);
+
+  source13GainNode = context.createGain();
+  source13.connect(source13GainNode);
+  source13GainNode.connect(context.destination);
+
+  source14GainNode = context.createGain();
+  source14.connect(source14GainNode);
+  source14GainNode.connect(context.destination);
+
+  source15GainNode = context.createGain();
+  source15.connect(source15GainNode);
+  source15GainNode.connect(context.destination);
+
+  source16GainNode = context.createGain();
+  source16.connect(source16GainNode);
+  source16GainNode.connect(context.destination);
+
+  source17GainNode = context.createGain();
+  source17.connect(source17GainNode);
+  source17GainNode.connect(context.destination);
+
+
   // set the inital volume to 0
   source1GainNode.gain.value = 0;
   source2GainNode.gain.value = 0;
@@ -262,6 +375,13 @@ function finishedLoading(bufferList) {
   source8GainNode.gain.value = 0;
   source9GainNode.gain.value = 0;
   source10GainNode.gain.value = 0;
+  source11GainNode.gain.value = 0;
+  source12GainNode.gain.value = 0;
+  source13GainNode.gain.value = 0;
+  source14GainNode.gain.value = 0;
+  source15GainNode.gain.value = 0;
+  source16GainNode.gain.value = 0;
+  source17GainNode.gain.value = 0;
 
   // start each of the loops
   source1.start(0);
@@ -274,6 +394,13 @@ function finishedLoading(bufferList) {
   source8.start(0);
   source9.start(0);
   source10.start(0);
+  source11.start(0);
+  source12.start(0);
+  source13.start(0);
+  source14.start(0);
+  source15.start(0);
+  source16.start(0);
+  source17.start(0);
 }
 
 window.onload = init;
