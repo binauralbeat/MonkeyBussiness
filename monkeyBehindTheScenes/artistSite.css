@@ -19,7 +19,7 @@ body{
     font-size: 30px;
     color: #f0f1ed;
     text-decoration: none;
-    margin: 10px;
+    /* margin: 10px; */
     /* padding-right: 200px; */
     /* float: right; */
 
@@ -92,24 +92,18 @@ body{
     animation: colorchange 3s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
     -webkit-animation: colorchange 3s infinite; /* Chrome and Safari */
+
+    /* animation: colorchangeTwo 3s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    /* -webkit-animation: colorchangeTwo 3s infinite; Chrome and Safari */
 }
 
-/* .titleBack{
+.titleBack{
     animation: colorchangeTwo 3s infinite;
     -webkit-animation: colorchangeTwo 3s infinite;
 
 }
-border: greenyellow; */
 
-@keyframes colorchangeTwo {
-
-    0%   {background-color: rgb(54, 150, 83);}
-    25%  {background-color: rgb(158, 189, 88);}
-    50%  {background-color: rgb(10, 10, 102);}
-    75%  {background-color: rgb(76, 19, 104);}
-    100% {background-color: rgb(59, 49, 15);}
-
-}
 
 @keyframes colorchange
 {
@@ -120,6 +114,16 @@ border: greenyellow; */
     75%  {color: rgb(115, 78, 133);}
     100% {color: rgb(152, 241, 164);}
 }
+@keyframes colorchangeTwo {
+
+    0%   {background-color: rgb(151, 228, 174);}
+    25%  {background-color: rgb(179, 115, 185);}
+    50%  {background-color: rgb(104, 104, 190);}
+    75%  {background-color: rgb(131, 131, 131);}
+    100% {background-color: rgb(221, 212, 127);}
+
+}
+
 
 .outerBox {
 
@@ -148,7 +152,7 @@ h2 {
 
 .sticky {
     background-color: black;
-    float: right;
+    float: left;
     margin-bottom: 20px;
     width: 100%;
     /* margin: 20px; */

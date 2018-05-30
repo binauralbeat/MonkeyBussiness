@@ -21,13 +21,19 @@ $.ajax({ // post to JSON DB
         "message":(JSON.stringify(userMessage))
    }
 
- }).then(userID=> sessionStorage.setItem("userID", JSON.stringify(userID.id)))
+
+}).then(userID=> sessionStorage.setItem("userID", JSON.stringify(userID.id)))
+
 
 })
 
-$(".clickSub").click(function() {
-    $(this).closest('input').find("input[type=text], textarea").val("");
-});
+$(function() {
+    $("#clickSub").click(function() {
+        $(".inputFields").val('');
+    });
+  });
+
+
 
 
 // .then(userObj => console.log(userObj))

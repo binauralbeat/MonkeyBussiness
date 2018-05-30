@@ -9,6 +9,8 @@
 body {
   font-family: "Open Sans";
   font-size: 14px;
+  padding-top: 40px;
+    width: 100%;
   /* display: block; */
 }
 
@@ -67,9 +69,9 @@ body {
     background-color: white;
 }
 
-.titleBack {
-    width: 50%;
-}
+/* .titleBack {
+
+} */
 
 .title {
 
