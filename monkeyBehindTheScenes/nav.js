@@ -18,8 +18,8 @@ navi.appendChild(execSum)
 
 const rapSht = document.createElement ("a")
 rapSht.className = "navLinks"
-rapSht.href = "rapSheet/rapSheet.html"
-rapSht.textContent = "STORE"
+rapSht.href = "/store/store.html"
+rapSht.textContent = "TUNES"
 navi.appendChild(rapSht)
 
 const interact = document.createElement ("a")
@@ -27,6 +27,12 @@ interact.className = "navLinks"
 interact.href = "/index.html"
 interact.textContent = "INTERACT"
 navi.appendChild(interact)
+
+const photo = document.createElement ("a")
+photo.className = "navLinks"
+photo.href = "/photography/photo.html"
+photo.textContent = "PHOTO"
+navi.appendChild(photo)
 
 const contact = document.createElement ("a")
 contact.className = "navLinks"
